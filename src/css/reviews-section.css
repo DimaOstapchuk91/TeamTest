@@ -1,13 +1,13 @@
-/* .review-title {
+.review-title {
   text-align: left;
   margin-bottom: 24px;
-} */
+}
 
-/* .swiper {
+.swiper {
   overflow: hidden;
-} */
+}
 
-/* .review-item {
+.review-item {
   padding: 32px 36px;
   background-color: #f3f3f3;
   border-radius: 30px;
@@ -19,9 +19,9 @@
   border: 2px solid #fbfbfb;
   margin: 0 auto;
   margin-bottom: 24px;
-} */
+}
 
-/* .review-subtitle {
+.review-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
@@ -38,9 +38,9 @@
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(12, 12, 12, 0.4);
-} */
+}
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .review-title {
     margin-bottom: 40px;
   }
@@ -51,10 +51,4 @@
     display: flex;
     gap: 20px;
   }
-} */
-
-/* @media screen and (min-width: 768px) {
 }
-
-@media screen and (min-width: 1280px) {
-} */
