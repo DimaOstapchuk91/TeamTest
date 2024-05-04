@@ -13,8 +13,12 @@
       referrerpolicy="no-referrer"
     />
     
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script type="module" crossorigin src="/TeamTest/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/TeamTest/assets/index-05012548.css">
+    <link rel="stylesheet" href="/TeamTest/assets/index-af22acd7.css">
   </head>
   <body>
     <!-- Header -->
@@ -466,8 +470,12 @@
   <div class="container">
     <h2 class="review-title">Reviews</h2>
     <div class="swiper">
+      <button
+        class="visually-hidden carousel-button prev"
+        type="button"
+      ></button>
       <div class="swiper-container">
-        <ul class="review-list swiper-wrapper">
+        <ul class="swiper-wrapper review-list">
           <li class="review-item swiper-slide">
             <img
               class="review-list-image"
@@ -487,11 +495,8 @@
           <li class="review-item swiper-slide">
             <img
               class="review-list-image"
-              srcset="
-                ./img/reviews-section-img/victoria-romashenko-1x.png 1x,
-                ./img/reviews-section-img/victoria-romashenko-2x.png 2x
-              "
-              src="./img/reviews-section-img/victoria-romashenko-1x.png"
+              srcset="/TeamTest/assets/victoria-romashenko-1x-29443f11.png 1x, /TeamTest/assets/victoria-romashenko-1x-29443f11.png 2x"
+              src="/TeamTest/assets/victoria-romashenko-1x-29443f11.png"
               alt="Victoria Romashenko"
               width="56"
               height="56"
@@ -507,7 +512,7 @@
             <img
               class="review-list-image"
               srcset="/TeamTest/assets/anastasia-trachuk-1x-3835f30a.png 1x, /TeamTest/assets/anastasia-trachuk-1x-3835f30a.png 2x"
-              src="./img/reviews-section-img/anastasia-trachuk-1x.png 1x"
+              src="/img/reviews-section-img/anastasia-trachuk-1x.png 1x"
               alt="Anastasia Trachuk"
               width="56"
               height="56"
@@ -522,6 +527,15 @@
           </li>
         </ul>
       </div>
+      <div class="visually-hidden pagination">
+        <span class="pagination__button"></span>
+        <span class="pagination__button"></span>
+        <span class="pagination__button"></span>
+      </div>
+      <button
+        class="visually-hidden carousel-button next"
+        type="button"
+      ></button>
     </div>
   </div>
 </section>
@@ -674,5 +688,6 @@
 
 
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
