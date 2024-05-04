@@ -21,7 +21,7 @@
   margin-bottom: 24px;
 }
 
-.review-subtitle {
+/* .review-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
@@ -38,7 +38,7 @@
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(12, 12, 12, 0.4);
-}
+} */
 
 /* @media screen and (min-width: 768px) {
   .review-title {
