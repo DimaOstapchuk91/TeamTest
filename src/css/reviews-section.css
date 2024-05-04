@@ -1,11 +1,11 @@
-/* .review-title {
+.review-title {
   text-align: left;
   margin-bottom: 24px;
 }
 
-.swiper {
+/* .swiper {
   overflow: hidden;
-}
+} */
 
 .review-item {
   padding: 32px 36px;
@@ -44,11 +44,11 @@
   .review-title {
     margin-bottom: 40px;
   }
-} */
+}
 
-/* @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .review-list {
     display: flex;
     gap: 20px;
   }
-} */
+}
