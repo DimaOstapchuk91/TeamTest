@@ -11,7 +11,7 @@
   padding: 32px 36px;
   background-color: #f3f3f3;
   border-radius: 30px;
-  max-width: 344px;
+  max-width: 335px;
 }
 
 .review-list-image {
@@ -44,11 +44,22 @@
   .review-title {
     margin-bottom: 40px;
   }
+  .review-item {
+    max-width: 344px;
+    height: 100%;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .review-list {
-    display: flex;
-    gap: 20px;
+    /* display: flex;
+    gap: 20px; */
+  }
+  .review-item {
+    max-width: 370px;
+    max-height: 270px;
+  }
+  .swiper-container {
+    height: 272px;
   }
 }
