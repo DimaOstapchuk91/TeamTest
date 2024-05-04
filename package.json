@@ -1,11 +1,11 @@
 {
-  "name": "ArtTeam",
+  "name": "TeamTest",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/ArtTeam/",
+    "build": "vite build --base=/TeamTest/",
     "preview": "vite preview"
   },
   "devDependencies": {
