@@ -1,4 +1,4 @@
-/* .review-title {
+.review-title {
   text-align: left;
   margin-bottom: 24px;
 }
@@ -38,9 +38,9 @@
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(12, 12, 12, 0.4);
-} */
+}
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .review-title {
     margin-bottom: 40px;
   }
@@ -51,4 +51,4 @@
     display: flex;
     gap: 20px;
   }
-}
+} */
