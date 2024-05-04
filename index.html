@@ -17,10 +17,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" crossorigin src="/TeamTest/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/TeamTest/assets/vendor-3de62d20.js">
-    <link rel="stylesheet" href="/TeamTest/assets/index-6287b3e1.css">
+    <link rel="stylesheet" href="/TeamTest/assets/index-20b7f9bd.css">
   </head>
   <body>
     <!-- Header -->
@@ -269,41 +268,174 @@
 </section>
 
       <!--  Catalog section -->
-      <section>
+      <section id="catolog" class="section">
+  <div class="container">
+    <h2 class="catalog-title">Catalog</h2>
     <div>
-        <h2>Catalog</h2>
-        <ul>
-            <li>
-                <img src="../img/catalog-section-img/images1-1x-N-min.png" alt="">
-                <p>Garmin Fenix 7X Pro Sapphire Solar</p>
-                <p>€500</p>
-            </li>
-            <li>
-                <p>Garmin Marq Athlete</p>
-                <p>€450</p>
-            </li>
-            <li>
-                <p>Garmin Descent MK1</p>
-                <p>€680</p>
-            </li>
-            <li>
-                <p>Garmin D2 Delta PX</p>
-                <p>€380</p>
-            </li>
-            <li>
-                <p>Garmin Fenix 6 Pro Solar</p>
-                <p>€400</p>
-            </li>
-            <li>
-                <p>Tube Watch S42 Date Steel With Black Case</p>
-                <p>€395</p>
-            </li>
-        </ul>
-        <button type="button">
-            Show more
-        </button>
+      <ul class="catalog-watch-list">
+        <li class="catalog-watch-link">
+          <div class="picture-box">
+            <picture class="catalog-picture-watch">
+              <source
+                srcset="/TeamTest/assets/images1-1x-N-min-6027c6f6.png 1x, /TeamTest/assets/images1-2x-N-min-f86d2d9a.png 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="/TeamTest/assets/images1-1x-T-min-f6b43c6f.png 1x, /TeamTest/assets/images1-2x-T-min-932b3b10.png 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/TeamTest/assets/images1-1x-M-min-88eb24c5.png 1x, /TeamTest/assets/images1-2x-M-min-bb82cd4e.png 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="catalog-picture-watch-img"
+                src="/TeamTest/assets/images1-1x-M-min-88eb24c5.png"
+                alt="Garmin Fenix 7X Pro"
+              />
+            </picture>
+          </div>
+
+          <p class="catalog-discribe">Garmin Fenix 7X Pro Sapphire Solar</p>
+          <p class="catalog-price">€500</p>
+        </li>
+
+        <li class="catalog-watch-link">
+          <div class="picture-box">
+            <picture class="catalog-picture-watch">
+              <source
+                srcset="/TeamTest/assets/images2-1x-N-min-8c6afebd.png 1x, /TeamTest/assets/images2-2x-N-min-16d529fd.png 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="/TeamTest/assets/images2-1x-T-min-61385ac2.png 1x, /TeamTest/assets/images2-2x-T-min-2f20dd42.png 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/TeamTest/assets/images2-1x-M-min-ea8ca616.png 1x, /TeamTest/assets/images2-2x-M-min-f5d3668f.png 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="catalog-picture-watch-img"
+                src="/TeamTest/assets/images2-1x-M-min-ea8ca616.png"
+                alt="Garmin Marq Athlete"
+              />
+            </picture>
+          </div>
+          <p class="catalog-discribe">Garmin Marq Athlete</p>
+          <p class="catalog-price">€450</p>
+        </li>
+
+        <li class="catalog-watch-link">
+          <div class="picture-box">
+            <picture class="catalog-picture-watch">
+              <source
+                srcset="/TeamTest/assets/images3-1x-N-min-ddc0546b.png 1x, /TeamTest/assets/images3-2x-N-min-06a290b7.png 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="/TeamTest/assets/images3-1x-T-min-c971f85b.png 1x, /TeamTest/assets/images3-2x-T-min-9283d348.png 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/TeamTest/assets/images3-1x-M-min-88acecf9.png 1x, /TeamTest/assets/images3-2x-M-min-c84d8e8e.png 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="catalog-picture-watch-img"
+                src="/TeamTest/assets/images3-1x-M-min-88acecf9.png"
+                alt="Garmin Descent MK1"
+              />
+            </picture>
+          </div>
+
+          <p class="catalog-discribe">Garmin Descent MK1</p>
+          <p class="catalog-price">€680</p>
+        </li>
+
+        <li class="catalog-watch-link">
+          <div class="picture-box">
+            <picture class="catalog-picture-watch">
+              <source
+                srcset="/TeamTest/assets/images4-1x-N-min-8f1634b4.png 1x, /TeamTest/assets/images4-2x-N-min-88d98194.png 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="/TeamTest/assets/images4-1x-T-min-a7eb4123.png 1x, /TeamTest/assets/images4-2x-T-min-7c325446.png 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/TeamTest/assets/images4-1x-M-min-c533643f.png 1x, /TeamTest/assets/images4-2x-M-min-726e6936.png 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="catalog-picture-watch-img"
+                src="/TeamTest/assets/images4-1x-M-min-c533643f.png"
+                alt="Garmin D2 Delta PX"
+              />
+            </picture>
+          </div>
+          <p class="catalog-discribe">Garmin D2 Delta PX</p>
+          <p class="catalog-price">€380</p>
+        </li>
+
+        <li class="catalog-watch-link">
+          <div class="picture-box">
+            <picture class="picture-watch">
+              <source
+                srcset="/TeamTest/assets/images5-1x-N-min-ff686928.png 1x, /TeamTest/assets/images5-2x-N-min-e2f9f184.png 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="/TeamTest/assets/images5-1x-T-min-4ccd60ba.png 1x, /TeamTest/assets/images5-2x-T-min-1b382792.png 2x"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="catalog-picture-watch-img"
+                src="/TeamTest/assets/images5-1x-T-min-4ccd60ba.png"
+                alt="Garmin Fenix 6 Pro Solar"
+              />
+            </picture>
+          </div>
+
+          <p class="catalog-discribe">Garmin Fenix 6 Pro Solar</p>
+          <p class="catalog-price">€400</p>
+        </li>
+
+        <li class="catalog-watch-link">
+          <div class="picture-box">
+            <picture class="catalog-picture-watch">
+              <source
+                srcset="/TeamTest/assets/images6-1x-N-min-a0535b1a.png 1x, /TeamTest/assets/images6-2x-N-min-dfa7da16.png 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="/TeamTest/assets/images6-1x-T-min-147d19ac.png 1x, /TeamTest/assets/images6-2x-T-min-aadf444e.png 2x"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="catalog-picture-watch-img"
+                src="/TeamTest/assets/images6-1x-T-min-147d19ac.png"
+                alt="Mark Guerrero"
+                height="292"
+                width="292"
+              />
+            </picture>
+          </div>
+
+          <p class="catalog-discribe">
+            Tube Watch S42 Date Steel With Black Case
+          </p>
+          <p class="catalog-price">€395</p>
+        </li>
+      </ul>
     </div>
+    <button class="catalog-button" type="button">Show more</button>
+  </div>
 </section>
+
       <!-- Advertisement section -->
       <section class="section">
 <div class="container">
