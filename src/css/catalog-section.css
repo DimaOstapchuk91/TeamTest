@@ -23,7 +23,8 @@
 .catalog-watch-link:nth-child(6) {
   display: none;
   padding: 10px 6px;
-  max-width: 344px;
+  max-width: 300px;
+  max-height: 250px;
 }
 
 /*  */
