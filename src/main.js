@@ -1,5 +1,6 @@
 import './js/menu.js';
 import './js/toggleItemsVisibility.js';
+import './js/mobilemenu.js';
 import Swiper from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
