@@ -6,7 +6,8 @@ function toggleItemsVisibility() {
     for (var i = listItems.length - 2; i < listItems.length; i++) {
       listItems[i].style.display = 'block';
       listItems[i].style.padding = '10px 6px';
-      
+      listItems[i].style.width = '223.175px';
+      listItems[i].style.height = '205.4px';
     }
     //"Show less"
     document.querySelector('.catalog-button').textContent = 'Show less';
