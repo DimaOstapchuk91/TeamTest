@@ -1,5 +1,4 @@
 import './js/menu.js';
-// import './js/reviews-slider.js';
 import Swiper from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -18,6 +17,10 @@ const swiper = new Swiper('.swiper-container', {
       slidesPerView: 3,
       spaceBetween: 20,
     },
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
   pagination: {
     el: '.pagination',
