@@ -5,6 +5,8 @@ function toggleItemsVisibility() {
     // show last 2
     for (var i = listItems.length - 2; i < listItems.length; i++) {
       listItems[i].style.display = 'block';
+      listItems[i].style.padding = '10px 6px';
+      
     }
     //"Show less"
     document.querySelector('.catalog-button').textContent = 'Show less';
