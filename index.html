@@ -20,7 +20,7 @@
     <script type="module" crossorigin src="/TeamTest/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/TeamTest/assets/vendor-c09b8518.js">
     <link rel="stylesheet" href="/TeamTest/assets/vendor-0ded8c46.css">
-    <link rel="stylesheet" href="/TeamTest/assets/index-32cb13f0.css">
+    <link rel="stylesheet" href="/TeamTest/assets/index-651db87d.css">
   </head>
   <body>
     <!-- Header -->
@@ -272,7 +272,6 @@
       <!--  Catalog section -->
       <section id="catalog" class="section">
   <div class="container">
-    <script src="/src/js/toggleItemsVisibility.js"></script>
     <h2 class="catalog-title">Catalog</h2>
     <div>
       <ul class="catalog-watch-list">
@@ -295,6 +294,8 @@
                 class="catalog-picture-watch-img"
                 src="/TeamTest/assets/images1-1x-M-min_21_11zon-d21cf18e.webp"
                 alt="Garmin Fenix 7X Pro"
+                height="208"
+                width="226"
               />
             </picture>
           </div>
@@ -348,6 +349,8 @@
                 class="catalog-picture-watch-img"
                 src="/TeamTest/assets/images3-1x-M-min_1_11zon-3f7f57b7.webp"
                 alt="Garmin Descent MK1"
+                height="208"
+                width="226"
               />
             </picture>
           </div>
@@ -375,6 +378,8 @@
                 class="catalog-picture-watch-img"
                 src="/TeamTest/assets/images4-1x-M-min_7_11zon-c9a88e66.webp"
                 alt="Garmin D2 Delta PX"
+                height="208"
+                width="226"
               />
             </picture>
           </div>
@@ -382,7 +387,7 @@
           <p class="catalog-price">€380</p>
         </li>
 
-        <li class="catalog-watch-link">
+        <li class="catalog-watch-link catalog-watch-link">
           <div class="picture-box">
             <picture class="picture-watch">
               <source
@@ -393,11 +398,19 @@
                 srcset="/TeamTest/assets/images5-1x-T-min_14_11zon-2f5c9681.webp 1x, /TeamTest/assets/images5-2x-T-min_16_11zon-fee0d440.webp 2x"
                 media="(min-width: 768px)"
               />
+              <source
+                srcset="/TeamTest/assets/mobile-watch-5-1x-min-8e20e07e.png 1x, /TeamTest/assets/mobile-watch-5-1x-min-8e20e07e.png 2x"
+                media="(max-width: 767px)"
+              />
 
               <img
                 class="catalog-picture-watch-img"
-                src="/TeamTest/assets/images5-1x-T-min_14_11zon-2f5c9681.webp"
+
+                src="/TeamTest/assets/mobile-watch-5-1x-min-8e20e07e.png"
+
                 alt="Garmin Fenix 6 Pro Solar"
+                height="208"
+                width="226"
               />
             </picture>
           </div>
@@ -406,7 +419,7 @@
           <p class="catalog-price">€400</p>
         </li>
 
-        <li class="catalog-watch-link">
+        <li class="catalog-watch-link catalog-watch-link">
           <div class="picture-box">
             <picture class="catalog-picture-watch">
               <source
@@ -417,13 +430,18 @@
                 srcset="/TeamTest/assets/images6-1x-T-min_18_11zon-3a739211.webp 1x, /TeamTest/assets/images6-2x-T-min_20_11zon-f63251f8.webp 2x"
                 media="(min-width: 768px)"
               />
+              <source
+                srcset="/TeamTest/assets/mobile-watch-6-1x-min-ca67ff28.png 1x, /TeamTest/assets/mobile-watch-6-1x-min-ca67ff28.png 2x"
+                media="(max-width: 767px)" />
 
               <img
                 class="catalog-picture-watch-img"
-                src="/TeamTest/assets/images6-1x-T-min_18_11zon-3a739211.webp"
-                alt="Tube Watch S42"
-                height="292"
-                width="292"
+
+                src="/TeamTest/assets/mobile-watch-6-1x-min-ca67ff28.png"
+                alt="Mark Guerrero"
+                height="208"
+                width="226"
+
               />
             </picture>
           </div>
@@ -435,13 +453,9 @@
         </li>
       </ul>
     </div>
-    <button
-      class="catalog-button"
-      type="button"
-      onclick="toggleItemsVisibility()"
-    >
-      Show more
-    </button>
+
+    <button class="catalog-button catalog-button" type="button" >Show more</button>
+
   </div>
 </section>
 
