@@ -10,16 +10,16 @@ function toggleItemsVisibility() {
       pictureElement.style.height = '223.18px'
     }
     //"Show less"
-    document.querySelector('.catalog-button').textContent = 'Show less';
+    document.querySelector('.catalog-btn').textContent = 'Show less';
   } else {
     // hide last 2
     for (var i = listItems.length - 2; i < listItems.length; i++) {
       listItems[i].style.display = 'none';
     }
     //"Show more"
-    document.querySelector('.catalog-button').textContent = 'Show more';
+    document.querySelector('.catalog-btn').textContent = 'Show more';
   }
   buttonClicked = !buttonClicked;
 }
 
-document.querySelector('.catalog-button').addEventListener('click', toggleItemsVisibility);
+document.querySelector('.catalog-btn').addEventListener('click', toggleItemsVisibility);
