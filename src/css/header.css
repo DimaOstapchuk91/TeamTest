@@ -85,7 +85,7 @@
   }
   .header-link:not(.current-nav):hover,
   .header-link:not(.current-nav):focus {
-    transform: scale(1.25);
+    transform: scale(1.1);
     color: #3350e9;
   }
 
@@ -215,7 +215,7 @@ transform: translateX(0);
   background-color: transparent;
   padding: 0;
   stroke: #fbfbfb;
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob-btn-close:hover,
@@ -260,7 +260,7 @@ transform: translateX(0);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.29;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob-link:hover,
@@ -295,8 +295,8 @@ transform: translateX(0);
   width: 40px;
   height: 40px;
   fill: #fbfbfb;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-pic:hover,
