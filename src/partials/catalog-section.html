@@ -1,6 +1,5 @@
 <section id="catalog" class="section">
   <div class="container">
-    <script src="/src/js/toggleItemsVisibility.js"></script>
     <h2 class="catalog-title">Catalog</h2>
     <div>
       <ul class="catalog-watch-list">
@@ -32,6 +31,8 @@
                 class="catalog-picture-watch-img"
                 src="/img/catalog-section-img/images1-1x-M-min.png"
                 alt="Garmin Fenix 7X Pro"
+                height="208"
+                width="226"
               />
             </picture>
           </div>
@@ -103,6 +104,8 @@
                 class="catalog-picture-watch-img"
                 src="/img/catalog-section-img/images3-1x-M-min.png"
                 alt="Garmin Descent MK1"
+                height="208"
+                width="226"
               />
             </picture>
           </div>
@@ -139,6 +142,8 @@
                 class="catalog-picture-watch-img"
                 src="/img/catalog-section-img/images4-1x-M-min.png"
                 alt="Garmin D2 Delta PX"
+                height="208"
+                width="226"
               />
             </picture>
           </div>
@@ -146,7 +151,7 @@
           <p class="catalog-price">€380</p>
         </li>
 
-        <li class="catalog-watch-link">
+        <li class="catalog-watch-link catalog-watch-link">
           <div class="picture-box">
             <picture class="picture-watch">
               <source
@@ -163,11 +168,17 @@
                 "
                 media="(min-width: 768px)"
               />
+              <source
+                srcset="/img/catalog-section-img/mobile-hidden/mobile-watch-5-1x-min.png 1x, /img/catalog-section-img/mobile-hidden/mobile-watch-5-1x-min.png 2x"
+                media="(max-width: 767px)"
+              />
 
               <img
                 class="catalog-picture-watch-img"
-                src="/img/catalog-section-img/images5-1x-T-min.png"
+                src="/img/catalog-section-img/mobile-hidden/mobile-watch-5-1x-min.png"
                 alt="Garmin Fenix 6 Pro Solar"
+                height="208"
+                width="226"
               />
             </picture>
           </div>
@@ -176,7 +187,7 @@
           <p class="catalog-price">€400</p>
         </li>
 
-        <li class="catalog-watch-link">
+        <li class="catalog-watch-link catalog-watch-link">
           <div class="picture-box">
             <picture class="catalog-picture-watch">
               <source
@@ -193,13 +204,16 @@
                 "
                 media="(min-width: 768px)"
               />
+              <source
+                srcset="/img/catalog-section-img/mobile-hidden/mobile-watch-6-1x-min.png 1x, /img/catalog-section-img/mobile-hidden/mobile-watch-6-1x-min.png 2x"
+                media="(max-width: 767px)" />
 
               <img
                 class="catalog-picture-watch-img"
-                src="/img/catalog-section-img/images6-1x-T-min.png"
+                src="/img/catalog-section-img/mobile-hidden/mobile-watch-6-1x-min.png"
                 alt="Mark Guerrero"
-                height="292"
-                width="292"
+                height="208"
+                width="226"
               />
             </picture>
           </div>
@@ -211,6 +225,6 @@
         </li>
       </ul>
     </div>
-    <button class="catalog-button" type="button" onclick="toggleItemsVisibility()">Show more</button>
+    <button class="catalog-button catalog-button" type="button" >Show more</button>
   </div>
 </section>

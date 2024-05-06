@@ -5,7 +5,7 @@ function toggleItemsVisibility() {
     // show last 2
     for (var i = listItems.length - 2; i < listItems.length; i++) {
       listItems[i].style.display = 'block';
-      listItems[i].style.padding = '10px 6px';
+      // listItems[i].style.padding = '10px 6px';
       var pictureElement = listItems[i].querySelector('picture');
       pictureElement.style.height = '223.18px'
     }
