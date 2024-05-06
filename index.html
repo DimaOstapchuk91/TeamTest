@@ -20,7 +20,7 @@
     <script type="module" crossorigin src="/TeamTest/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/TeamTest/assets/vendor-c09b8518.js">
     <link rel="stylesheet" href="/TeamTest/assets/vendor-0ded8c46.css">
-    <link rel="stylesheet" href="/TeamTest/assets/index-b1e9e28d.css">
+    <link rel="stylesheet" href="/TeamTest/assets/index-32cb13f0.css">
   </head>
   <body>
     <!-- Header -->
@@ -83,7 +83,7 @@
         </li>
       </ul>
     </div>
-    <button class="header-btn" type="button" data-mobile-menu-open>
+    <button class="header-btn js-open-menu" type="button">
       <svg class="header-btn-open" width="34" height="34">
         <use href="/TeamTest/assets/icon-ab92ab72.svg#icon-open-menu"></use>
       </svg>
@@ -92,10 +92,10 @@
 </header>
 
 <!-- Mob menu -->
-<script src="mobilemenu.js"></script>
-<div class="backdrop" data-mobile-data-menu>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+<div class="backdrop js-menu-container" id="mobile-menu">
   <div class="mob-wrap">
-    <button class="mob-btn-close" type="button" data-mobile-menu-close>
+    <button class="mob-btn-close js-close-menu" type="button">
       <svg class="btn-close" width="34" height="34">
         <use href="/TeamTest/assets/icon-ab92ab72.svg#icon-x"></use>
       </svg>
@@ -103,22 +103,22 @@
     <nav class="mob-menu">
       <ul class="mob-list">
         <li class="mob-item">
-          <a href="/index.html" class="mob-link current">Home</a>
+          <a href="/index.html" class="mob-link current header-link">Home</a>
         </li>
         <li class="mob-item">
-          <a href="#about-us" class="mob-link">About Us</a>
+          <a href="#about-us" class="mob-link header-link">About Us</a>
         </li>
         <li class="mob-item">
-          <a href="#catalog" class="mob-link">Catalog</a>
+          <a href="#catalog" class="mob-link header-link">Catalog</a>
         </li>
         <li class="mob-item">
-          <a href="#sale" class="mob-link">Sale</a>
+          <a href="#sale" class="mob-link header-link">Sale</a>
         </li>
         <li class="mob-item">
-          <a href="#reviews" class="mob-link">Reviews</a>
+          <a href="#reviews" class="mob-link header-link">Reviews</a>
         </li>
         <li class="mob-item">
-          <a href="#contact-us" class="mob-link">Contact Us</a>
+          <a href="#contact-us" class="mob-link header-link">Contact Us</a>
         </li>
       </ul>
     </nav>
