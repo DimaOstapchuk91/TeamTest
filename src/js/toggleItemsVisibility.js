@@ -1,25 +1,29 @@
-var buttonClicked = false; 
-function toggleItemsVisibility() {
-  var listItems = document.querySelectorAll('.catalog-watch-link');
-  if (!buttonClicked) {
-    // show last 2
-    for (var i = listItems.length - 2; i < listItems.length; i++) {
-      listItems[i].style.display = 'block';
-      listItems[i].style.padding = '10px 6px';
-      var pictureElement = listItems[i].querySelector('picture');
-      pictureElement.style.height = '223.18px'
-    }
-    //"Show less"
-    document.querySelector('.catalog-button').textContent = 'Show less';
-  } else {
-    // hide last 2
-    for (var i = listItems.length - 2; i < listItems.length; i++) {
-      listItems[i].style.display = 'none';
-    }
-    //"Show more"
-    document.querySelector('.catalog-button').textContent = 'Show more';
-  }
-  buttonClicked = !buttonClicked;
-}
+var buttonClicked = false;
 
-document.querySelector('.catalog-button').addEventListener('click', toggleItemsVisibility);
+function toggleItemsVisibility() {
+  var listItems = document.querySelectorAll('.showmore');
+  if(listItems){
+    if (!buttonClicked) {
+      for (var i = 0; i < listItems.length; i++) {
+        listItems[i].style.display = 'block';
+        var imgElement = listItems[i].querySelector('img');
+        imgElement.style.height = '223.18px';
+        imgElement.style.width = '205.4px';
+        console.log(imgElement.style.height);
+      }
+
+      document.querySelector('.catalog-button').textContent = 'Show less';
+    } else {
+      
+      for (var i = listItems.length - 2; i < listItems.length; i++) {
+        listItems[i].style.display = 'none';
+      }
+      
+      document.querySelector('.catalog-button').textContent = 'Show more';
+    }
+
+    buttonClicked = !buttonClicked;
+  }
+
+  
+}
