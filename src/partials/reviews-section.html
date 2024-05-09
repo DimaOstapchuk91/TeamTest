@@ -2,13 +2,66 @@
   <div class="container">
     <h2 class="review-title">Reviews</h2>
     <div class="swiper">
-      <button
-        class="visually-hidden carousel-button prev"
-        aria-label="carousel-button-prev"
-        type="button"
-      ></button>
-      <div class="swiper-container">
+      <div class="swiper-box swiper-container">
         <ul class="swiper-wrapper review-list">
+          <li class="review-item swiper-slide">
+            <img
+              class="review-list-image"
+              srcset="
+                /img/reviews-section-img/john-wax-1x.png 1x,
+                /img/reviews-section-img/john-wax-1x.png 2x
+              "
+              src="/img/reviews-section-img/john-wax-1x.png"
+              alt="John Wax"
+              width="56"
+              height="56"
+            />
+            <h3 class="review-subtitle">John Wax</h3>
+            <p class="reviev-text">
+              Buying a watch from was the best choice for me. The design is
+              perfectly combined with high quality materials. The strap fits
+              nicely on the hand, and the mechanism works flawlessly.
+            </p>
+          </li>
+          <li class="review-item swiper-slide">
+            <img
+              class="review-list-image"
+              srcset="
+                /img/reviews-section-img/victoria-romashenko-1x.png 1x,
+                /img/reviews-section-img/victoria-romashenko-1x.png 2x
+              "
+              src="/img/reviews-section-img/victoria-romashenko-1x.png"
+              alt="Victoria Romashenko"
+              width="56"
+              height="56"
+            />
+            <h3 class="review-subtitle">Victoria Romashenko</h3>
+            <p class="reviev-text">
+              Can't take my eyes off my watch from. Every time I put it on, it
+              is admired by those around me. The build quality and attention to
+              detail make it a real gem among my accessories.
+            </p>
+          </li>
+          <li class="review-item swiper-slide">
+            <img
+              class="review-list-image"
+              srcset="
+                /img/reviews-section-img/anastasia-trachuk-1x.png 1x,
+                /img/reviews-section-img/anastasia-trachuk-1x.png 2x
+              "
+              src="/img/reviews-section-img/anastasia-trachuk-1x.png 1x"
+              alt="Anastasia Trachuk"
+              width="56"
+              height="56"
+            />
+
+            <h3 class="review-subtitle">Anastasia Trachuk</h3>
+            <p class="reviev-text">
+              My watch from is a real masterpiece. Every detail impresses with
+              the high quality of execution. Special features like [specify
+              features] make it an indispensable companion in my daily life.
+            </p>
+          </li>
           <li class="review-item swiper-slide">
             <img
               class="review-list-image"
@@ -69,15 +122,34 @@
           </li>
         </ul>
       </div>
-      <div class="visually-hidden pagination">
-        <span class="pagination__button"></span>
-        <span class="pagination__button"></span>
-        <span class="pagination__button"></span>
+      <div class="review-button-container">
+        <button
+          class="review-button carousel-button prev"
+          aria-label="carousel-button-prev"
+          type="button"
+        >
+          <svg width="24" height="24" class="review-icon">
+            <use href="/img/icon.svg#circle-left"></use>
+          </svg>
+        </button>
+        <div class="pagination">
+          <span class="pagination-button"></span>
+          <span class="pagination-button"></span>
+          <span class="pagination-button"></span>
+          <span class="pagination-button"></span>
+          <span class="pagination-button"></span>
+          <span class="pagination-button"></span>
+        </div>
+        <button
+          class="review-button carousel-button next"
+          aria-label="carousel-button-next"
+          type="button"
+        >
+          <svg width="24" height="24" class="review-icon">
+            <use href="/img/icon.svg#circle-right"></use>
+          </svg>
+        </button>
       </div>
-      <button
-        class="visually-hidden carousel-button next" aria-label="carousel-button-next"
-        type="button"
-      ></button>
     </div>
   </div>
 </section>
