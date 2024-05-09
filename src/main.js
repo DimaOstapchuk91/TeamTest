@@ -1,11 +1,19 @@
 import './js/menu.js';
 import './js/toggleItemsVisibility.js';
 import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 const swiper = new Swiper('.swiper-container', {
+  lazyPreloadPrevNext: 0,
+  grabCursor: true,
+  direction: 'horizontal',
   loop: true,
+  speed: 300,
+  autoplay: {
+    delay: 500,
+    disableOnInteraction: false,
+  },
   slidesPerView: 1,
   spaceBetween: 16,
   breakpoints: {
@@ -14,20 +22,23 @@ const swiper = new Swiper('.swiper-container', {
       spaceBetween: 16,
     },
     1280: {
-      loop: false,
       slidesPerView: 3,
       spaceBetween: 20,
+      loop: true,
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+      },
     },
   },
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+
+  modules: [Navigation, Pagination],
   pagination: {
     el: '.pagination',
-    bulletClass: 'pagination__button',
-    bulletActiveClass: 'pagination__button--active',
+    bulletClass: 'pagination-button',
+    bulletActiveClass: 'pagination-button--active',
   },
+
   navigation: {
     nextEl: '.carousel-button.next',
     prevEl: '.carousel-button.prev',

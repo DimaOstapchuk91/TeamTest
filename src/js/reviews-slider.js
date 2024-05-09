@@ -1,39 +1,32 @@
-const swiper = new Swiper('.swiper-container', {
-  loop: true,
-  slidesPerView: 1,
-  spaceBetween: 16,
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 16,
-    },
-    1280: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-  },
-  pagination: {
-    el: '.pagination',
-    bulletClass: 'pagination__button',
-    bulletActiveClass: 'pagination__button--active',
-  },
-  navigation: {
-    nextEl: '.carousel-button.next',
-    prevEl: '.carousel-button.prev',
-  },
-});
+(() => {
+  const mobileMenu = document.querySelector('.js-menu-container');
+  const openMenuBtn = document.querySelector('.js-open-menu');
+  const closeMenuBtn = document.querySelector('.js-close-menu');
+  const closeMenuLink = document.querySelectorAll('.header-link');
+  const menuBackdrop = document.querySelector('.menu-backdrop');
 
-// const swiper = new Swiper('.swiper-container', {
-//   direction: 'vertical',
-//   loop: true,
-//   pagination: {
-//     el: 'swiper-pagination',
-//   },
-//   navigation: {
-//     nextEL: 'swiper-buttton-next',
-//     prevEl: 'swiper-button-prev',
-//   },
-//   scrollbar: {
-//     el: 'swiper-scrollbar',
-//   },
-// });
+  const toggleMenu = () => {
+    const isMenuOpen =
+      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+    mobileMenu.classList.toggle('is-open');
+
+    const scrollLockMethod = !isMenuOpen
+      ? 'disableBodyScroll'
+      : 'enableBodyScroll';
+    bodyScrollLock[scrollLockMethod](document.body);
+  };
+
+  closeMenuLink.forEach(item => item.addEventListener('click', toggleMenu));
+
+  openMenuBtn.addEventListener('click', toggleMenu);
+  closeMenuBtn.addEventListener('click', toggleMenu);
+
+  // Close the mobile menu on wider screens if the device orientation changes
+  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+    if (!e.matches) return;
+    mobileMenu.classList.remove('is-open');
+    openMenuBtn.setAttribute('aria-expanded', false);
+    bodyScrollLock.enableBodyScroll(document.body);
+  });
+})();

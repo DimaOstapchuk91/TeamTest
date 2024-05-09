@@ -2,11 +2,11 @@
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
-    const closeMenuLink = document.querySelectorAll('.header-link');
+  const closeMenuLink = document.querySelectorAll('.header-link');
+  const menuBackdrop = document.querySelector('.menu-backdrop');
 
   const toggleMenu = () => {
-    const isMenuOpen =
-      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+    const isMenuOpen = mobileMenu.classList.contains('is-open');
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
 
@@ -15,6 +15,7 @@
       : 'enableBodyScroll';
     bodyScrollLock[scrollLockMethod](document.body);
   };
+
   closeMenuLink.forEach(item => item.addEventListener('click', toggleMenu));
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
@@ -25,5 +26,14 @@
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
+  });
+
+  // Close the mobile menu when clicking on the backdrop
+  menuBackdrop.addEventListener('click', event => {
+    if (event.target === menuBackdrop) {
+      mobileMenu.classList.remove('is-open');
+      openMenuBtn.setAttribute('aria-expanded', false);
+      bodyScrollLock.enableBodyScroll(document.body);
+    }
   });
 })();
