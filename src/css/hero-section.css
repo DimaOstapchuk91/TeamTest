@@ -36,17 +36,32 @@
 }
 
 .hero-scroll {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-decoration: underline;
   color: #0c0c0c;
+  opacity: 0.7;
+  transition: opacity 300ms linear;
 }
 
 .hero-scroll:hover,
 .hero-scroll:focus {
-  color: #3350e9;
+  opacity: 1;
+}
+
+.hero-icon-scroll {
+  fill: #0c0c0c;
+  opacity: 0.9;
+}
+
+.hero-icon-scroll:hover,
+.hero-icon-scroll:focus {
+  opacity: 1;
 }
 
 .hero-image {

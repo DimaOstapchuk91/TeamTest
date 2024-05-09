@@ -3,35 +3,96 @@
     <h2 class="contact-title">Contact Us</h2>
     <div class="section-contact-wrapper">
       <div class="contact-us-wrapper">
-        <p class="contact-form-text">Please use the form below to contact us. Enter your name, email, phone, and message
-          and we'll get back to you shortly.</p>
+        <p class="contact-form-text">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
         <form class="contact-form" name="contact-us-form">
-          <label for="user-name" class="form-label"><input type="text" class="form-input" name="user-name" id="user-name" placeholder="Name" required /></label>
+          <label for="user-name" class="form-label"
+            ><input
+              type="text"
+              class="form-input"
+              name="user-name"
+              id="user-name"
+              placeholder="Name"
+              required
+          /></label>
           <label for="user-email" class="form-label">
-            <input type="email" class="form-input" name="user-email" id="user-email" placeholder="Email"
-              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required />
+            <input
+              type="email"
+              class="form-input"
+              name="user-email"
+              id="user-email"
+              placeholder="Email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
           </label>
           <label for="user-tel" class="form-label">
-            <input type="tel" class="form-input" name="user-tel" id="user-tel" placeholder="+380"
-              pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$ (+380-XX-XXX-XX-XX)" required />
+            <input
+              type="tel"
+              class="form-input"
+              name="user-tel"
+              id="user-tel"
+              placeholder="+380"
+              pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$ (+380-XX-XXX-XX-XX)"
+              required
+            />
           </label>
           <label for="user-comment" class="form-label">
-            <textarea class="form-input area-text" type="submit" name="user-comment" id="user-comment"
-              placeholder="Comment"></textarea>
+            <textarea
+              class="form-input area-text"
+              type="submit"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Comment"
+            ></textarea>
           </label>
 
-          <button class="contact-form-btn" name="submit-button" type="submit">Send</button>
+          <button class="contact-form-btn" name="submit-button" type="submit">
+            Send
+          </button>
         </form>
       </div>
       <div class="contact-img-wrapper">
         <picture>
-          <source srcset="/img/contact-us-img/contact-form-desk.jpg 1x, /img/contact-us-img/contact-form-desk@2x.jpg 2x"
-            media="(min-width:1280px)" />
-          <source srcset="/img/contact-us-img/contact-form-tab.jpg 1x, /img/contact-us-img/contact-form-tab@2x.jpg 2x" media="(min-width:768px)" />
-          <source srcset="/img/contact-us-img/contact-form-mob.jpg 1x, /img/contact-us-img/contact-form-mob@2x.jpg 2x" media="(max-width: 767px)" />
-          <img src="/img/contact-us-img/contact-form-desk.jpg" alt="Watch on rock" class="contact-us-picture img" width="530" height="556"/>
+          <source
+            srcset="
+              /img/contact-us-img/contact-form-desk.jpg    1x,
+              /img/contact-us-img/contact-form-desk@2x.jpg 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              /img/contact-us-img/contact-form-tab.jpg    1x,
+              /img/contact-us-img/contact-form-tab@2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              /img/contact-us-img/contact-form-mob.jpg    1x,
+              /img/contact-us-img/contact-form-mob@2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            src="/img/contact-us-img/contact-form-desk.jpg"
+            alt="Watch on rock"
+            class="contact-us-picture img"
+            width="530"
+            height="556"
+          />
         </picture>
       </div>
+    </div>
+    <div class="scroll-box">
+      <a class="scroll-up" href="#header"
+        >Scroll Up
+        <svg width="20" height="20" class="contact-icon-scroll">
+          <use href="/img/icon.svg#circle-up"></use></svg
+      ></a>
     </div>
   </div>
 </section>
