@@ -4,6 +4,8 @@ import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/autoplay';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 const swiper = new Swiper('.swiper-container', {
   lazyPreloadPrevNext: 0,
   grabCursor: true,
