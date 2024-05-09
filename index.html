@@ -26,7 +26,7 @@
     <script type="module" crossorigin src="/TeamTest/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/TeamTest/assets/vendor-9728c427.js">
     <link rel="stylesheet" href="/TeamTest/assets/vendor-0ded8c46.css">
-    <link rel="stylesheet" href="/TeamTest/assets/index-64c15f1a.css">
+    <link rel="stylesheet" href="/TeamTest/assets/index-87800ede.css">
   </head>
   <body>
     <!-- Header -->
@@ -81,7 +81,7 @@
             target="_blank"
             rel="noopener noreferrer nofollow"
             ><svg width="20" height="20" class="header-social-pic">
-              <use href="/TeamTest/assets/icon-5a24baac.svg#icon-facebook"></use></svg
+              <use href="/TeamTest/assets/icon-af7a5704.svg#icon-facebook"></use></svg
           ></a>
         </li>
         <li class="social-item">
@@ -92,7 +92,7 @@
             target="_blank"
             rel="noopener noreferrer nofollow"
             ><svg width="20" height="20" class="header-social-pic">
-              <use href="/TeamTest/assets/icon-5a24baac.svg#icon-instagram"></use></svg
+              <use href="/TeamTest/assets/icon-af7a5704.svg#icon-instagram"></use></svg
           ></a>
         </li>
         <li class="social-item">
@@ -103,7 +103,7 @@
             target="_blank"
             rel="noopener noreferrer nofollow"
             ><svg width="20" height="20" class="header-social-pic">
-              <use href="/TeamTest/assets/icon-5a24baac.svg#icon-youtube"></use></svg
+              <use href="/TeamTest/assets/icon-af7a5704.svg#icon-youtube"></use></svg
           ></a>
         </li>
       </ul>
@@ -114,7 +114,7 @@
       type="button"
     >
       <svg class="header-btn-open" width="34" height="34">
-        <use href="/TeamTest/assets/icon-5a24baac.svg#icon-open-menu"></use>
+        <use href="/TeamTest/assets/icon-af7a5704.svg#icon-open-menu"></use>
       </svg>
     </button>
   </div>
@@ -135,7 +135,7 @@
       type="button"
     >
       <svg class="btn-close" width="34" height="34">
-        <use href="/TeamTest/assets/icon-5a24baac.svg#icon-x"></use>
+        <use href="/TeamTest/assets/icon-af7a5704.svg#icon-x"></use>
       </svg>
     </button>
     <nav class="mob-menu">
@@ -200,7 +200,7 @@
             target="_blank"
             rel="noopener noreferrer nofollow"
             ><svg width="20" height="20" class="social-pic">
-              <use href="/TeamTest/assets/icon-5a24baac.svg#icon-facebook"></use></svg
+              <use href="/TeamTest/assets/icon-af7a5704.svg#icon-facebook"></use></svg
           ></a>
         </li>
         <li class="social-item">
@@ -211,7 +211,7 @@
             target="_blank"
             rel="noopener noreferrer nofollow"
             ><svg width="20" height="20" class="social-pic">
-              <use href="/TeamTest/assets/icon-5a24baac.svg#icon-instagram"></use></svg
+              <use href="/TeamTest/assets/icon-af7a5704.svg#icon-instagram"></use></svg
           ></a>
         </li>
         <li class="social-item">
@@ -222,7 +222,7 @@
             target="_blank"
             rel="noopener noreferrer nofollow"
             ><svg width="20" height="20" class="social-pic">
-              <use href="/TeamTest/assets/icon-5a24baac.svg#icon-youtube"></use></svg
+              <use href="/TeamTest/assets/icon-af7a5704.svg#icon-youtube"></use></svg
           ></a>
         </li>
       </ul>
@@ -269,8 +269,10 @@
           />
         </picture>
         <a class="hero-scroll" aria-label="scroll-down" href="#footer" alt=""
-          >Scroll down</a
-        >
+          >Scroll down
+          <svg width="20" height="20" class="hero-icon-scroll">
+            <use href="/TeamTest/assets/icon-af7a5704.svg#circle-down"></use></svg
+        ></a>
       </div>
     </div>
     <div class="hero-image">
@@ -842,7 +844,7 @@
           type="button"
         >
           <svg width="24" height="24" class="review-icon">
-            <use href="/TeamTest/assets/icon-5a24baac.svg#circle-left"></use>
+            <use href="/TeamTest/assets/icon-af7a5704.svg#circle-left"></use>
           </svg>
         </button>
         <div class="pagination">
@@ -859,7 +861,7 @@
           type="button"
         >
           <svg width="24" height="24" class="review-icon">
-            <use href="/TeamTest/assets/icon-5a24baac.svg#circle-right"></use>
+            <use href="/TeamTest/assets/icon-af7a5704.svg#circle-right"></use>
           </svg>
         </button>
       </div>
@@ -873,38 +875,91 @@
     <h2 class="contact-title">Contact Us</h2>
     <div class="section-contact-wrapper">
       <div class="contact-us-wrapper">
-        <p class="contact-form-text">Please use the form below to contact us. Enter your name, email, phone, and message
-          and we'll get back to you shortly.</p>
+        <p class="contact-form-text">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
         <form class="contact-form" name="contact-us-form">
-          <label for="user-name" class="form-label"><input type="text" class="form-input" name="user-name" id="user-name" placeholder="Name" required /></label>
+          <label for="user-name" class="form-label"
+            ><input
+              type="text"
+              class="form-input"
+              name="user-name"
+              id="user-name"
+              placeholder="Name"
+              required
+          /></label>
           <label for="user-email" class="form-label">
-            <input type="email" class="form-input" name="user-email" id="user-email" placeholder="Email"
-              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required />
+            <input
+              type="email"
+              class="form-input"
+              name="user-email"
+              id="user-email"
+              placeholder="Email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
           </label>
           <label for="user-tel" class="form-label">
-            <input type="tel" class="form-input" name="user-tel" id="user-tel" placeholder="+380"
-              pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$ (+380-XX-XXX-XX-XX)" required />
+            <input
+              type="tel"
+              class="form-input"
+              name="user-tel"
+              id="user-tel"
+              placeholder="+380"
+              pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$ (+380-XX-XXX-XX-XX)"
+              required
+            />
           </label>
           <label for="user-comment" class="form-label">
-            <textarea class="form-input area-text" type="submit" name="user-comment" id="user-comment"
-              placeholder="Comment"></textarea>
+            <textarea
+              class="form-input area-text"
+              type="submit"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Comment"
+            ></textarea>
           </label>
 
-          <button class="contact-form-btn" name="submit-button" type="submit">Send</button>
+          <button class="contact-form-btn" name="submit-button" type="submit">
+            Send
+          </button>
         </form>
       </div>
       <div class="contact-img-wrapper">
         <picture>
-          <source srcset="/TeamTest/assets/contact-form-desk-0bca97a1.jpg 1x, /TeamTest/assets/contact-form-desk@2x-26127ea9.jpg 2x"
-            media="(min-width:1280px)" />
-          <source srcset="/TeamTest/assets/contact-form-tab-646cfae3.jpg 1x, /TeamTest/assets/contact-form-tab@2x-e8127261.jpg 2x" media="(min-width:768px)" />
-          <source srcset="/TeamTest/assets/contact-form-mob-a07a3723.jpg 1x, /TeamTest/assets/contact-form-mob@2x-54e3f9e3.jpg 2x" media="(max-width: 767px)" />
-          <img src="/TeamTest/assets/contact-form-desk-0bca97a1.jpg" alt="Watch on rock" class="contact-us-picture img" width="530" height="556"/>
+          <source
+            srcset="/TeamTest/assets/contact-form-desk-0bca97a1.jpg 1x, /TeamTest/assets/contact-form-desk@2x-26127ea9.jpg 2x"
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="/TeamTest/assets/contact-form-tab-646cfae3.jpg 1x, /TeamTest/assets/contact-form-tab@2x-e8127261.jpg 2x"
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="/TeamTest/assets/contact-form-mob-a07a3723.jpg 1x, /TeamTest/assets/contact-form-mob@2x-54e3f9e3.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img
+            src="/TeamTest/assets/contact-form-desk-0bca97a1.jpg"
+            alt="Watch on rock"
+            class="contact-us-picture img"
+            width="530"
+            height="556"
+          />
         </picture>
       </div>
     </div>
+    <div class="scroll-box">
+      <a class="scroll-up" href="#header"
+        >Scroll Up
+        <svg width="20" height="20" class="contact-icon-scroll">
+          <use href="/TeamTest/assets/icon-af7a5704.svg#circle-up"></use></svg
+      ></a>
+    </div>
   </div>
 </section>
+
     </main>
 
     <footer class="footer-container container" id="footer">
@@ -922,7 +977,7 @@
                 aria-label="facebook-link-footer"
                 rel="noopener"
                 ><svg class="footer-soc-icon" width="20" height="20">
-                  <use href="/TeamTest/assets/icon-5a24baac.svg#icon-facebook"></use></svg
+                  <use href="/TeamTest/assets/icon-af7a5704.svg#icon-facebook"></use></svg
               ></a>
             </li>
             <li class="footer-soc-item">
@@ -933,7 +988,7 @@
                 aria-label="instagram-link-footer"
                 rel="noopener"
                 ><svg class="footer-soc-icon" width="20" height="20">
-                  <use href="/TeamTest/assets/icon-5a24baac.svg#icon-instagram"></use></svg
+                  <use href="/TeamTest/assets/icon-af7a5704.svg#icon-instagram"></use></svg
               ></a>
             </li>
             <li class="footer-soc-item">
@@ -944,7 +999,7 @@
                 aria-label="youtube-link-footer"
                 rel="noopener"
                 ><svg class="footer-soc-icon" width="20" height="20">
-                  <use href="/TeamTest/assets/icon-5a24baac.svg#icon-youtube"></use></svg
+                  <use href="/TeamTest/assets/icon-af7a5704.svg#icon-youtube"></use></svg
               ></a>
             </li>
           </ul>
